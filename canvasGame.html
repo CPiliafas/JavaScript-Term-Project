@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Canvas Game</title>    
+<style>
+    body{
+        background: linear-gradient(to right, white, blue,red);
+        background-repeat: repeat-y;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 14pt;
+    }
+    h1{
+        text-align: center;
+        font-size: 3em;
+        color: 	red;
+        text-shadow: 2px 1px blue;
+    }
+    button{
+        background-color: white; 
+        border: 3px solid blue;
+        padding: 1% 1%;
+        margin: 2px;
+        font-size: 1em;
+        color: red;
+        text-align: center;
+        text-decoration: none;
+    }
+    button:hover{
+        background-color: blue;
+        color: 	red;
+    }
+
+    div{
+        width: 100%;
+        text-align: center;
+        margin-top: 2%;
+    }
+    canvas{
+        display: inline;
+        border: 10px solid red;
+    }
+    footer{
+        text-align: center;
+        margin-top: 2%;
+        color: white;
+    }
+
+</style>
+</head>
+<body onload="startGame()">
+<h1>Superhero's Flight!</h1>
+<div id="canvasDiv">
+    <canvas id="myCanvas"> Your browser does not support the HTML5 canvas tag.</canvas>
+</div>
+<div>
+        <button id="playAgain" onclick="location=URL">Play Again</button>
+    </div>
+<footer>Christos Piliafas 2018-2019 &copy; </footer>
+<script src="js/canvasGame.js"></script>
+</body>
+</html>
